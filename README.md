@@ -27,7 +27,8 @@ Created my first newbie project on frontend mentor to improve my html+css skills
 
 ### Links
 
-- Solution URL: [https://github.com/MrRo-bot/FEM1]
+- GITHUB REPO: [https://github.com/MrRo-bot/FEM1]
+- Solution URL: [https://codepen.io/Mr-RO13OT/pen/vYgjwzg]
 
 ## My process
 
