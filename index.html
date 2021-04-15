@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /*Skeleton CSS starts*/
+      @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap");
+
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+      }
+
+      :root {
+        font-size: 18px;
+        --cyan: #41ccd3;
+        --Dark-cyan: hsl(185, 75%, 39%);
+        --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+        --Dark-grayish-blue: hsl(227, 10%, 46%);
+        --link-color: hsl(228, 45%, 44%);
+        --Dark-gray: hsl(0, 0%, 59%);
+        --white: hsl(255, 100%, 100%);
+      }
+
+      html {
+        background-color: var(--Dark-cyan);
+        height: 100vh;
+      }
+
+      body {
+        font-family: "Kumbh Sans", sans-serif;
+        overflow: hidden;
+        margin: 0;
+      }
+      /*...Skeleton CSS ends*/
+      /**/
+      /**/
+      /**/
+      /**/
+      /*...TYPOGRAPHY STARTS...*/
+
+      .center {
+        background: var(--white);
+      }
+
+      .profile-pic {
+        border: 6px solid var(--white);
+      }
+
+      .name,
+      .number {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--Very-dark-desaturated-blue);
+      }
+
+      .city,
+      .heading {
+        color: var(--Dark-grayish-blue);
+      }
+
+      .city {
+        font-size: 0.7rem;
+      }
+
+      .age {
+        font-weight: 300;
+        color: var(--Dark-gray);
+      }
+
+      .count {
+        border-top: 1px solid hsla(0, 0%, 59%, 0.2);
+      }
+
+      .heading {
+        letter-spacing: 0.07rem;
+        font-size: 0.55rem;
+      }
+
+      .attribution {
+        font-size: 0.6rem;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: var(--link-color);
+      }
+
+      /*...TYPOGRAPHY ENDS...*/
+      /**/
+      /**/
+      /**/
+      /**/
+      /*...BASIC ALIGNMENT AND SIZING STARTS...*/
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 100vh;
+      }
+
+      .row,
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 350px;
+        min-height: 365px;
+        border-radius: 15px;
+        margin: 0 auto;
+      }
+
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 350px;
+        min-height: 365px;
+        border-radius: 15px;
+        margin: 0 auto;
+        box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+      }
+
+      [class*="pattern"] {
+        position: absolute;
+        z-index: -1;
+      }
+
+      .pattern-top {
+        top: -770px;
+        left: -770px;
+      }
+
+      .pattern-bottom {
+        bottom: -770px;
+        right: -770px;
+      }
+      .profile-back img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .profile-pic {
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 5.5em;
+        height: 5.5em;
+        margin: -2.5em auto auto;
+      }
+
+      .profile-pic img {
+        width: 5.1em;
+        height: 5.1em;
+      }
+
+      .name,
+      .age,
+      .city,
+      .number,
+      .heading {
+        text-align: center;
+      }
+
+      .name,
+      .age {
+        margin-top: 1.5em;
+      }
+
+      .city {
+        margin-top: 0.7em;
+      }
+
+      .count {
+        display: flex;
+        margin: 1em 0.5em 0 1em;
+      }
+
+      .count-heads {
+        margin: 1.5em 0;
+        width: 33.33%;
+      }
+
+      .heading {
+        margin-top: 0.5em;
+      }
+
+      .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        right: 10%;
+      }
+
+      /*...BASIC ALIGNMENT AND SIZING END...*/
+      /**/
+      /**/
+      /**/
+      /**/
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <img
+          class="pattern-top"
+          src="images/bg-pattern-top.svg"
+          alt="top pattern"
+        />
+        <img
+          class="pattern-bottom"
+          src="images/bg-pattern-bottom.svg"
+          alt="top pattern"
+        />
+        <div class="center">
+          <div class="profile-back">
+            <img src="images/bg-pattern-card.svg" alt="pattern card" />
+          </div>
+          <div class="profile-pic">
+            <img src="/images/image-victor.jpg" alt="Victor Crest" />
+          </div>
+          <p class="name">Victor Crest <span class="age">26</span></p>
+          <p class="city">London</p>
+          <div class="count">
+            <div class="count-heads">
+              <p class="number">80K</p>
+              <p class="heading">Followers</p>
+            </div>
+            <div class="count-heads">
+              <p class="number">803K</p>
+              <p class="heading">Likes</p>
+            </div>
+            <div class="count-heads">
+              <p class="number">1.4K</p>
+              <p class="heading">Photos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mr.Robot</a>.
+    </div>
+  </body>
+</html>
