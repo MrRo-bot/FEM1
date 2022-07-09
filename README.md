@@ -27,7 +27,7 @@ Created my first newbie project on frontend mentor to improve my html+css skills
 
 ### Links
 
-- GITHUB REPO: [https://github.com/MrRo-bot/FEM1]
+- GITHUB REPO: [https://github.com/MrRo-bot/Frontend-Mentor-Profile-card-component]
 - Solution URL: [https://codepen.io/Mr-RO13OT/pen/vYgjwzg]
 
 ## My process
