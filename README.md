@@ -14,7 +14,7 @@
 
 ## Overview
 
-Created my first newbie project on frontend mentor to improve my html+css skills and for building up my resume.
+Created project on Frontend Mentor to improve my html+css skills and for building up my resume.
 
 ### The challenge
 
